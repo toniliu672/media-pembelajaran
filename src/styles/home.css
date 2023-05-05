@@ -1,0 +1,118 @@
+.section__home{
+	height: 100vh;
+}
+
+.home__container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.welcome__container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background-color: #f1f5f9;
+	padding: 1rem;
+	gap: 1rem;
+}
+
+.welcome__button {
+	position: relative;
+	align-items: center;
+	justify-content: center;
+}
+
+.welcome__button a {
+	text-decoration: none;
+	color: white;
+}
+
+.welcome__student-img {
+	max-width: 100%; /* batasi lebar maksimum agar sesuai dengan lebar kontainer */
+	overflow: hidden; /* sembunyikan bagian SVG yang melebihi kontainer */
+}
+
+.welcome__student-img svg {
+	width: 100%; /* atur lebar SVG agar sesuai dengan kontainer */
+	height: auto; /* atur tinggi SVG secara otomatis agar proporsional */
+}
+
+.falling-box {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-color: #000;
+	opacity: 0.5;
+}
+
+@media (min-width: 280px) and (max-width: 450px) {
+	.welcome__subtitle {
+		text-align: center;
+	}
+	.welcome__subtitle h3 {
+		font-size: 20px;
+	}
+	.welcome__student-img {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+	}
+	.welcome__student-img img {
+		width: 90%;
+	}
+	.welcome__student-img svg {
+		margin-top: 30px;
+		width: 80%; /* atur lebar SVG agar sesuai dengan kontainer */
+		height: auto; /* atur tinggi SVG secara otomatis agar proporsional */
+	}
+	.welcome__button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+@media (min-width: 451px) and (max-width: 768px) {
+	.welcome__container {
+		gap: 1rem; /* menambahkan jarak antara elemen */
+		padding-top: 3rem; /* menambahkan jarak di bagian atas container */
+	}
+	.welcome__student-img svg {
+		margin-top: 30px;
+		width: 40%; /* atur lebar SVG agar sesuai dengan kontainer */
+		height: auto; /* atur tinggi SVG secara otomatis agar proporsional */
+	}
+	.welcome__button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.welcome__student-img {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media (min-width: 769px) {
+	.welcome__container {
+		flex-direction: row;
+		justify-content: space-between;
+		gap: 2rem;
+	}
+
+	.welcome__content {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 1rem;
+		margin-left: 2rem;
+	}
+
+	.welcome__student-img {
+		max-width: 50%;
+		margin-right: 2rem;
+	}
+}

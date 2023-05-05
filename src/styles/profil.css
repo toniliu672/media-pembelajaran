@@ -1,0 +1,66 @@
+/* Profil */
+.profil__container {
+    min-height: 100vh;
+    max-height: 100vh ;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+	text-align: center;
+}
+
+.profil__img img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.profil__title h1 {
+	font-size: 2rem;
+	margin: 1rem 0;
+}
+
+.profil__content h5 {
+	font-size: 1.2rem;
+	line-height: 1.5;
+}
+
+.profil__link--container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 1rem;
+    margin-top: 30px;
+}
+
+.profil__linkedin img,
+.profil__github img {
+	width: 40px;
+	height: 40px;
+}
+
+/* Responsivitas */
+@media screen and (max-width: 450px) {
+	.profil__img img {
+
+		width: 150px;
+		height: 150px;
+	}
+
+	.profil__title h1 {
+		font-size: 1.5rem;
+	}
+
+	.profil__content h5 {
+		font-size: 1rem;
+	}
+
+	.profil__linkedin img,
+	.profil__github img {
+		width: 30px;
+		height: 30px;
+	}
+}
+
