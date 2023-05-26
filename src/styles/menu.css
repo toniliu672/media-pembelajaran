@@ -22,10 +22,10 @@
 	margin-bottom: 20px;
 }
 .bg-metallic {
-	background-color: #555555;
+	background-color: #555555 !important;
 }
 .hover-bg-metallic:hover {
-	background-color: #777777;
+	background-color: #777777 !important;
 }
 .nav-link {
 	text-decoration: none;
